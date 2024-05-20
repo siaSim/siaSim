@@ -17,5 +17,7 @@ Here are some ideas to get you started:
 
 <div align="center">
   <img src="https://github.com/siaSim/siaSim/assets/102781433/f040b42a-6704-4283-a900-74998c5ddc4e"/>
+  <div>Stack📚<div>
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=기술스택아이콘&logoColor=white">
 </div>
 
