@@ -54,7 +54,7 @@ Here are some ideas to get you started:
         <img src="https://img.shields.io/badge/Andoid Studio-3DDC84?style=flat-square&logo=android studio&logoColor=white">
     </div>
     <!-- AI -->
-    <p><strong>AI</strong></p>
+    <p><strong> AI </strong></p>
     <div>
         <img src="https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=Jupyter&logoColor=white">
         <img src="https://img.shields.io/badge/Keras-D00000?style=for-the-badge&logo=Keras&logoColor=white">
@@ -72,11 +72,3 @@ Here are some ideas to get you started:
       <img src="https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=Notion&logoColor=white">
       <img src="https://img.shields.io/badge/https://img.shields.io/badge/StarUML-8A2BE2>
     </div>
-
-    <!-- 
-    ## ✍🏻 DEV's log ✍🏻
- <div style="display:flex; flex-direction:row;">
-        <a href="https://blog.naver.com/shalisa">샤리사의 블로그</a>
- </div> 
- -->
-
