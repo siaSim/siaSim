@@ -73,8 +73,10 @@ Here are some ideas to get you started:
       <img src="https://img.shields.io/badge/https://img.shields.io/badge/StarUML-8A2BE2>
     </div>
 
+    <!-- 
     ## ✍🏻 DEV's log ✍🏻
  <div style="display:flex; flex-direction:row;">
         <a href="https://blog.naver.com/shalisa">샤리사의 블로그</a>
- </div>
+ </div> 
+ -->
 
