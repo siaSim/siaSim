@@ -70,3 +70,19 @@ Here are some ideas to get you started:
       <img src="https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=Notion&logoColor=white">
       <img src="https://img.shields.io/badge/https://img.shields.io/badge/StarUML-8A2BE2>
     </div>
+</div>
+## ✍🏻 Blog ✍🏻
+<div style="display:flex; flex-direction:column; align-items:flex-start;">
+    <div>
+        <span>
+            <a href="https://shalisa.tistory.com/">
+                <img src="https://img.shields.io/badge/tistory-000000?style=plastic&logo=tistory&logoColor=white"/>
+            </a>
+        </span>
+        <span>
+            <a href="https://blog.naver.com/shalisa">
+                <img src="https://img.shields.io/badge/naver-03C75A?style=plastic&logo=naver&logoColor=white"/>
+            </a>
+        </span>
+    </div>
+</div>
