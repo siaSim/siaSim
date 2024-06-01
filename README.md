@@ -72,7 +72,7 @@ Here are some ideas to get you started:
     </div>
 </div>
 
-<p> ✍🏻 Blog ✍🏻 </p>
+## 👩🏻‍💻 blog 👩🏻‍💻
   <div style="display:flex; flex-direction:column; align-items:flex-start;">
     <div>
         <span>
