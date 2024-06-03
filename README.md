@@ -70,10 +70,8 @@ Here are some ideas to get you started:
       <img src="https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=Notion&logoColor=white">
       <img src="https://img.shields.io/badge/https://img.shields.io/badge/StarUML-8A2BE2>
     </div>
-</div>
-
-## 👩🏻‍💻 blog 👩🏻‍💻
-  <div style="display:flex; flex-direction:column; align-items:flex-start;">
+    <!-- blog -->
+    <p><strong>👩🏻‍💻 blog 👩🏻‍💻</strong></p>
     <div>
         <span>
             <a href="https://shalisa.tistory.com/">
