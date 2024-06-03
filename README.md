@@ -73,15 +73,11 @@ Here are some ideas to get you started:
     <!-- blog -->
     <p><strong>👩🏻‍💻 blog 👩🏻‍💻</strong></p>
     <div>
-        <span>
             <a href="https://shalisa.tistory.com/">
                 <img src="https://img.shields.io/badge/tistory-000000?style=plastic&logo=tistory&logoColor=white"/>
             </a>
-        </span>
-        <span>
             <a href="https://blog.naver.com/shalisa">
                 <img src="https://img.shields.io/badge/naver-03C75A?style=plastic&logo=naver&logoColor=white"/>
             </a>
-        </span>
     </div>
 </div>
