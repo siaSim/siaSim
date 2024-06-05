@@ -80,4 +80,3 @@ Here are some ideas to get you started:
                 <img src="https://img.shields.io/badge/naver-03C75A?style=plastic&logo=naver&logoColor=white"/>
             </a>
     </div>
-</div>
