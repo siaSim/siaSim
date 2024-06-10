@@ -72,6 +72,8 @@ Here are some ideas to get you started:
     </div>
           
 ## ✍🏻 blog ✍🏻
+<div style="display:flex; flex-direction:column; align-items:flex-start;">
+    <!--blog-->
     <div>
             <a href="https://shalisa.tistory.com/">
                 <img src="https://img.shields.io/badge/tistory-000000?style=plastic&logo=tistory&logoColor=white"/>
