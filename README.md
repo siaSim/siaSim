@@ -16,7 +16,7 @@ Here are some ideas to get you started:
 [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FsiaSim%2Fhit-counter&count_bg=%2300E4FF&title_bg=%23555555&icon=github.svg&icon_color=%23FFFFFF&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
 ## 👩🏻‍💻 stack 👩🏻‍💻
 <div style="display:flex; flex-direction:column; align-items:flex-start;">
-    <!-- Language -->
+    <!-- Language! -->
     <p><strong>Language</strong></p>
     <div>
         <img src="https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=C&logoColor=white">
