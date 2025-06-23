@@ -2,15 +2,14 @@
 
 [![Hits](https://hits.sh/github.com/siaSim.svg?style=flat-square&label=visits&color=00bfff&labelColor=555555)](https://hits.sh/github.com/siaSim/)
 
-
 ---
 
 ## 💁🏻‍♀️ About Me
 
-- 🎓 컴퓨터공학 전공 / 풀스택 경험을 갖춘 **백엔드지향 개발자**
-- 🛠️ React Native + Spring Boot 기반의 **지속 가능한 IT 서비스 개발 중**
-- 🌱 사용자 경험과 사회적 임팩트를 함께 고민하는 개발자
-- ✍️ 꾸준한 블로그 기록으로 다른 개발자와 지식 공유 실천 중
+- 🎓 컴퓨터공학 전공 / **풀스택 경험**을 갖춘 **백엔드지향 개발자**
+- 🛠️ React Native + Spring Boot 기반의 **지속 가능한 IT 서비스** 개발 중
+- 🌱 사용자 경험과 **사회적 임팩트**를 함께 고민하는 개발자
+- ✍️ **지속적인 블로그 기록**과 오픈 커뮤니케이션을 실천하고 있습니다
 
 ---
 
@@ -18,8 +17,8 @@
 
 | 프로젝트 | 설명 |
 |----------|------|
-| **세이브잇 SaveIt** (2025.04~) | 음식물 쓰레기 절감을 위한 마감 할인 예약 플랫폼 개발 (총괄)<br>📌 *과학기술정통부 주관 2025 ICT 한이음 드림업 프로젝트 선정* |
-| **아웃메이트 Outmate** (2024.04~11) | 외출도우미 앱 개발 (프론트 총괄)<br>📌 *과학기술정통부 주관 2024 ICT 한이음 멘토링 프로젝트 선정* |
+| **세이브잇 SaveIt** (2025.04~) | 음식물 쓰레기 절감을 위한 마감 할인 예약 플랫폼 개발 (총괄)<br>📌 *2025 과기정통부 ICT 한이음 드림업 선정* |
+| **아웃메이트 Outmate** (2024.04~11) | 외출도우미 앱 개발 (프론트 총괄)<br>📌 *2024 과기정통부 ICT 한이음 멘토링 선정* |
 
 ---
 
@@ -40,7 +39,7 @@
 **📌 대전세종충남 지역혁신플랫폼** (2022.05 ~ 2024.02)  
 > **학부연구생**  
 > 미래 모빌리티 인터랙션 시스템 기술 개발  
-> 주요 업무: **AI 모델링 / Java 백엔드 개발 / 시스템 통합**
+> 주요 업무: **AI 모델링 / Java 백엔드 개발**
 
 ---
 
@@ -50,8 +49,8 @@
 
 ### 🔤 Language
 <img src="https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=C&logoColor=white">
-<img src="https://img.shields.io/badge/java-007396?style=for-the-badge&logo=java&logoColor=white"> 
-<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=Python&logoColor=white">
+<img src="https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=java&logoColor=white"> 
+<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white">
 
 ### 🗄️ Database
 <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white">
@@ -68,11 +67,22 @@
 <img src="https://img.shields.io/badge/React Native-61DAFB?style=flat-square&logo=React&logoColor=black"/>
 
 ### ⚙️ Tools
-<img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=Git&logoColor=white">
-<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=GitHub&logoColor=white">
-<img src="https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=Notion&logoColor=white">
+<img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white">
+<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white">
+<img src="https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=notion&logoColor=white">
 
 </div>
+
+---
+
+## 📊 GitHub Stats
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=siaSim&show_icons=true&theme=radical" height="150"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=siaSim&layout=compact&theme=radical" height="150"/>
+  <br/>
+  <img src="https://streak-stats.demolab.com?user=siaSim&theme=tokyonight_duo&hide_border=true" height="150"/>
+</p>
 
 ---
 
@@ -91,9 +101,9 @@
 
 ## 🙋🏻‍♀️ Contact
 
-- 📫 Email: [shalisa@naver.com](mailto:shalisa@naver.com)
-- 💬 Instagram: [@shalisa____](https://www.instagram.com/shalisa____)
-- 💻 GitHub: [https://github.com/siaSim](https://github.com/siaSim)
+- 📫 Email: [shalisa@naver.com](mailto:shalisa@naver.com)  
+- 💬 Instagram: [@shalisa____](https://www.instagram.com/shalisa____)  
+- 💻 GitHub: [github.com/siaSim](https://github.com/siaSim)
 
 ---
 
