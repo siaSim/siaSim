@@ -1,6 +1,7 @@
 ![header](https://capsule-render.vercel.app/api?type=rect&color=timeGradient&text=Welcome%20to%20Sia's%20GitHub%20👋&animation=twinkling&fontSize=35&fontAlignY=40&fontAlign=70&height=250)
 
-[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://github.com/siaSim&count_bg=%2300E4FF&title_bg=%23555555&icon=github.svg&icon_color=%23FFFFFF&title=visits&edge_flat=false)](https://github.com/siaSim)
+[![Hits](https://hits.sh/github.com/siaSim.svg?style=flat-square&label=visits&color=00bfff&labelColor=555555)](https://hits.sh/github.com/siaSim/)
+
 
 ---
 
