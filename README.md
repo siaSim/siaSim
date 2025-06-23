@@ -75,17 +75,6 @@
 
 ---
 
-## 📊 GitHub Stats
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=siaSim&show_icons=true&theme=radical" height="150"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=siaSim&layout=compact&theme=radical" height="150"/>
-  <br/>
-  <img src="https://streak-stats.demolab.com?user=siaSim&theme=tokyonight_duo&hide_border=true" height="150"/>
-</p>
-
----
-
 ## ✍🏻 Blog
 
 <div>
