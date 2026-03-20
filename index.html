@@ -3,10 +3,146 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>내 첫 웹페이지</title>
+  <title>Sia Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f7f9fc;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #8ec5fc, #e0c3fc);
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 42px;
+    }
+
+    header p {
+      font-size: 18px;
+      margin-top: 12px;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    section {
+      margin-bottom: 50px;
+    }
+
+    h2 {
+      font-size: 28px;
+      margin-bottom: 16px;
+      color: #333;
+    }
+
+    .card {
+      background: white;
+      padding: 24px;
+      margin-bottom: 20px;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    .links a {
+      display: inline-block;
+      margin-right: 12px;
+      margin-bottom: 10px;
+      padding: 10px 16px;
+      text-decoration: none;
+      background: #222;
+      color: white;
+      border-radius: 10px;
+    }
+
+    .stack span {
+      display: inline-block;
+      background: #e9eef5;
+      padding: 8px 14px;
+      border-radius: 20px;
+      margin: 6px 8px 0 0;
+      font-size: 14px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      color: #666;
+      font-size: 14px;
+    }
+  </style>
 </head>
 <body>
-  <h1>안녕하세요</h1>
-  <p>이것은 GitHub Pages로 배포한 웹사이트입니다.</p>
+  <header>
+    <h1>Welcome to Sia's Portfolio 👋</h1>
+    <p>AI Developer | Full-Stack Builder | Social Impact</p>
+  </header>
+
+  <div class="container">
+    <section>
+      <h2>About Me</h2>
+      <div class="card">
+        <p>컴퓨터공학 전공 기반의 AI 개발자입니다.</p>
+        <p>React Native와 Spring Boot를 활용해 지속 가능한 IT 서비스를 개발하고 있습니다.</p>
+        <p>기술뿐 아니라 사용자 경험과 사회적 가치를 함께 고민합니다.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+      <div class="card">
+        <h3>세이브잇 SaveIt</h3>
+        <p>음식물 쓰레기 절감을 위한 마감 할인 예약 플랫폼 개발</p>
+        <p><strong>2025 과학기술정통부 ICT 한이음 드림업 장려상</strong></p>
+      </div>
+
+      <div class="card">
+        <h3>아웃메이트 Outmate</h3>
+        <p>외출도우미 앱 개발 / 프론트 총괄</p>
+        <p><strong>2024 과학기술정통부 ICT 한이음 멘토링 선정</strong></p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Tech Stack</h2>
+      <div class="stack">
+        <span>C</span>
+        <span>Java</span>
+        <span>Python</span>
+        <span>MySQL</span>
+        <span>TensorFlow</span>
+        <span>HTML/CSS</span>
+        <span>TypeScript</span>
+        <span>React Native</span>
+        <span>Git</span>
+        <span>GitHub</span>
+        <span>Notion</span>
+      </div>
+    </section>
+
+    <section>
+      <h2>Links</h2>
+      <div class="links">
+        <a href="https://github.com/siaSim" target="_blank">GitHub</a>
+        <a href="https://shalisa.tistory.com/" target="_blank">Tistory</a>
+        <a href="https://blog.naver.com/shalisa" target="_blank">Naver Blog</a>
+        <a href="mailto:shalisa@naver.com">Email</a>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    함께 배우고 성장하며, 더 나은 세상을 만드는 개발자 🌱
+  </footer>
 </body>
 </html>
