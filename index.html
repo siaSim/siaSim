@@ -5,122 +5,399 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sia Portfolio</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: #f7f9fc;
+      background:
+        radial-gradient(circle at 20% 20%, rgba(142, 197, 252, 0.35), transparent 25%),
+        radial-gradient(circle at 80% 15%, rgba(224, 195, 252, 0.35), transparent 25%),
+        linear-gradient(180deg, #f7f9fc 0%, #eef4ff 100%);
       color: #222;
       line-height: 1.6;
-      scroll-behavior: smooth;
+      overflow-x: hidden;
+    }
+
+    .bg-shape {
+      position: fixed;
+      border-radius: 50%;
+      filter: blur(20px);
+      opacity: 0.55;
+      z-index: -1;
+      animation: floatBlob 10s ease-in-out infinite;
+    }
+
+    .shape1 {
+      width: 220px;
+      height: 220px;
+      background: rgba(142, 197, 252, 0.45);
+      top: 80px;
+      left: -60px;
+    }
+
+    .shape2 {
+      width: 260px;
+      height: 260px;
+      background: rgba(224, 195, 252, 0.4);
+      top: 320px;
+      right: -80px;
+      animation-delay: 2s;
+    }
+
+    .shape3 {
+      width: 180px;
+      height: 180px;
+      background: rgba(166, 220, 255, 0.35);
+      bottom: 80px;
+      left: 15%;
+      animation-delay: 4s;
     }
 
     nav {
       position: sticky;
       top: 0;
       z-index: 1000;
-      background: white;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+      background: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(14px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.08);
       padding: 14px 20px;
       text-align: center;
+      transform: translateY(-100%);
+      animation: navDrop 0.9s ease forwards;
     }
 
     nav a {
+      position: relative;
       text-decoration: none;
       color: #333;
       font-weight: bold;
       margin: 0 16px;
       font-size: 15px;
+      transition: color 0.3s ease, transform 0.3s ease;
+      display: inline-block;
     }
 
-    nav a:hover {
-      color: #6a8dff;
+    nav a::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      bottom: -8px;
+      width: 0;
+      height: 3px;
+      border-radius: 999px;
+      background: linear-gradient(90deg, #8ec5fc, #b28dff);
+      transform: translateX(-50%);
+      transition: width 0.35s ease;
+    }
+
+    nav a:hover,
+    nav a.active {
+      color: #5d79ff;
+      transform: translateY(-2px);
+    }
+
+    nav a:hover::after,
+    nav a.active::after {
+      width: 100%;
     }
 
     header {
-      background: linear-gradient(135deg, #8ec5fc, #e0c3fc);
+      position: relative;
+      background: linear-gradient(135deg, #8ec5fc, #e0c3fc, #8ec5fc);
+      background-size: 300% 300%;
       color: white;
       text-align: center;
-      padding: 80px 20px;
+      padding: 110px 20px 100px;
+      animation: gradientMove 9s ease infinite;
+      overflow: hidden;
+    }
+
+    .hero-glow {
+      position: absolute;
+      width: 320px;
+      height: 320px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.22);
+      filter: blur(40px);
+      top: -60px;
+      left: 50%;
+      transform: translateX(-50%);
+      animation: pulseGlow 4s ease-in-out infinite;
     }
 
     header h1 {
+      position: relative;
       margin: 0;
-      font-size: 42px;
+      font-size: 48px;
+      opacity: 0;
+      transform: translateY(40px);
+      animation: heroReveal 1s ease forwards;
+      text-shadow: 0 8px 24px rgba(0,0,0,0.12);
     }
 
     header p {
-      font-size: 18px;
-      margin-top: 12px;
+      position: relative;
+      font-size: 19px;
+      margin-top: 14px;
+      opacity: 0;
+      transform: translateY(40px);
+      animation: heroReveal 1s ease 0.25s forwards;
+    }
+
+    .hero-buttons {
+      position: relative;
+      margin-top: 28px;
+      opacity: 0;
+      transform: translateY(40px);
+      animation: heroReveal 1s ease 0.45s forwards;
+    }
+
+    .hero-buttons a {
+      display: inline-block;
+      text-decoration: none;
+      padding: 12px 20px;
+      margin: 8px;
+      border-radius: 999px;
+      font-weight: bold;
+      transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+    }
+
+    .btn-primary {
+      background: white;
+      color: #5f74ff;
+      box-shadow: 0 10px 24px rgba(0,0,0,0.12);
+    }
+
+    .btn-secondary {
+      background: rgba(255,255,255,0.18);
+      color: white;
+      border: 1px solid rgba(255,255,255,0.4);
+    }
+
+    .hero-buttons a:hover {
+      transform: translateY(-5px) scale(1.04);
+      box-shadow: 0 14px 28px rgba(0,0,0,0.18);
     }
 
     .container {
       max-width: 1000px;
       margin: 0 auto;
-      padding: 40px 20px;
+      padding: 60px 20px;
     }
 
     section {
-      margin-bottom: 50px;
+      margin-bottom: 70px;
     }
 
     h2 {
-      font-size: 28px;
-      margin-bottom: 16px;
+      font-size: 30px;
+      margin-bottom: 18px;
       color: #333;
     }
 
-    .card {
-      background: white;
+    .card,
+    .project-card {
+      background: rgba(255,255,255,0.82);
+      backdrop-filter: blur(10px);
       padding: 24px;
       margin-bottom: 20px;
-      border-radius: 16px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      border-radius: 18px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      border: 1px solid rgba(255,255,255,0.5);
+      transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+      transform-style: preserve-3d;
+    }
+
+    .card:hover,
+    .project-card:hover {
+      transform: translateY(-12px) rotateX(3deg) rotateY(-3deg);
+      box-shadow: 0 22px 40px rgba(90, 120, 255, 0.16);
+      border-color: rgba(106, 141, 255, 0.35);
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+      gap: 20px;
+    }
+
+    .project-card h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+
+    .project-card strong {
+      color: #5d79ff;
+    }
+
+    .stack {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .stack span {
+      display: inline-block;
+      background: #e9eef5;
+      padding: 10px 16px;
+      border-radius: 999px;
+      font-size: 14px;
+      transition: transform 0.28s ease, background 0.28s ease, color 0.28s ease, box-shadow 0.28s ease;
+      cursor: default;
+    }
+
+    .stack span:hover {
+      transform: translateY(-7px) scale(1.06);
+      background: linear-gradient(135deg, #8ec5fc, #b28dff);
+      color: white;
+      box-shadow: 0 12px 24px rgba(106, 141, 255, 0.28);
     }
 
     .links a {
       display: inline-block;
       margin-right: 12px;
       margin-bottom: 10px;
-      padding: 10px 16px;
+      padding: 12px 18px;
       text-decoration: none;
       background: #222;
       color: white;
-      border-radius: 10px;
+      border-radius: 12px;
+      transition: transform 0.32s ease, background 0.32s ease, box-shadow 0.32s ease;
     }
 
-    .stack span {
-      display: inline-block;
-      background: #e9eef5;
-      padding: 8px 14px;
-      border-radius: 20px;
-      margin: 6px 8px 0 0;
-      font-size: 14px;
+    .links a:hover {
+      transform: translateY(-6px) scale(1.05);
+      background: linear-gradient(135deg, #6a8dff, #b28dff);
+      box-shadow: 0 14px 28px rgba(106, 141, 255, 0.28);
     }
 
     footer {
       text-align: center;
-      padding: 30px 20px;
+      padding: 30px 20px 50px;
       color: #666;
       font-size: 14px;
+      opacity: 0.9;
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(70px) scale(0.96);
+      transition: opacity 0.9s ease, transform 0.9s ease;
+    }
+
+    .reveal.show {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+
+    .delay-1 { transition-delay: 0.08s; }
+    .delay-2 { transition-delay: 0.16s; }
+    .delay-3 { transition-delay: 0.24s; }
+
+    @keyframes navDrop {
+      from {
+        transform: translateY(-100%);
+      }
+      to {
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes gradientMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    @keyframes heroReveal {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes floatBlob {
+      0%, 100% {
+        transform: translateY(0px) translateX(0px);
+      }
+      25% {
+        transform: translateY(-20px) translateX(10px);
+      }
+      50% {
+        transform: translateY(12px) translateX(-12px);
+      }
+      75% {
+        transform: translateY(-12px) translateX(8px);
+      }
+    }
+
+    @keyframes pulseGlow {
+      0%, 100% {
+        transform: translateX(-50%) scale(1);
+        opacity: 0.4;
+      }
+      50% {
+        transform: translateX(-50%) scale(1.15);
+        opacity: 0.6;
+      }
+    }
+
+    @media (max-width: 768px) {
+      nav a {
+        margin: 0 8px;
+        font-size: 14px;
+      }
+
+      header {
+        padding: 90px 20px 80px;
+      }
+
+      header h1 {
+        font-size: 36px;
+      }
+
+      header p {
+        font-size: 16px;
+      }
+
+      h2 {
+        font-size: 26px;
+      }
     }
   </style>
 </head>
 <body>
+  <div class="bg-shape shape1"></div>
+  <div class="bg-shape shape2"></div>
+  <div class="bg-shape shape3"></div>
+
   <nav>
-    <a href="#home">Home</a>
-    <a href="#specialization">Specialization</a>
-    <a href="#projects">Projects</a>
-    <a href="#techstack">Tech Stack</a>
-    <a href="#links">Links</a>
+    <a href="#home" class="nav-link active">Home</a>
+    <a href="#specialization" class="nav-link">Specialization</a>
+    <a href="#projects" class="nav-link">Projects</a>
+    <a href="#techstack" class="nav-link">Tech Stack</a>
+    <a href="#links" class="nav-link">Links</a>
   </nav>
 
   <header id="home">
+    <div class="hero-glow"></div>
     <h1>Welcome to Sia's Portfolio 👋</h1>
     <p>AI Developer | Full-Stack Builder | Social Impact</p>
+    <div class="hero-buttons">
+      <a href="#projects" class="btn-primary">View Projects</a>
+      <a href="#links" class="btn-secondary">Contact</a>
+    </div>
   </header>
 
   <div class="container">
-    <section id="specialization">
+    <section id="specialization" class="reveal">
       <h2>Specialization</h2>
       <div class="card">
         <p>컴퓨터공학 전공 기반의 AI 엔지니어입니다.</p>
@@ -129,25 +406,26 @@
       </div>
     </section>
 
-    <section id="projects">
+    <section id="projects" class="reveal">
       <h2>Projects</h2>
-      <div class="card">
-        <h3>세이브잇 SaveIt</h3>
-        <p>음식물 쓰레기 절감을 위한 마감 할인 예약 플랫폼 개발</p>
-        <p><strong>2025 과학기술정통부 ICT 한이음 드림업 장려상</strong></p>
-      </div>
+      <div class="project-grid">
+        <div class="project-card reveal delay-1">
+          <h3>세이브잇 SaveIt</h3>
+          <p>음식물 쓰레기 절감을 위한 마감 할인 예약 플랫폼 개발</p>
+          <p><strong>2025 과학기술정통부 ICT 한이음 드림업 장려상</strong></p>
+        </div>
 
-      <div class="card">
-        <h3>아웃메이트 Outmate</h3>
-        <p>외출도우미 앱 개발 / 프론트 총괄</p>
-        <p><strong>2024 과학기술정통부 ICT 한이음 멘토링 선정</strong></p>
+        <div class="project-card reveal delay-2">
+          <h3>아웃메이트 Outmate</h3>
+          <p>외출도우미 앱 개발 / 프론트 총괄</p>
+          <p><strong>2024 과학기술정통부 ICT 한이음 멘토링 선정</strong></p>
+        </div>
       </div>
     </section>
 
-    <section id="techstack">
+    <section id="techstack" class="reveal">
       <h2>Tech Stack</h2>
       <div class="stack">
-        <span>C</span>
         <span>Java</span>
         <span>Python</span>
         <span>MySQL</span>
@@ -161,7 +439,7 @@
       </div>
     </section>
 
-    <section id="links">
+    <section id="links" class="reveal">
       <h2>Links</h2>
       <div class="links">
         <a href="https://github.com/siaSim" target="_blank">GitHub</a>
@@ -175,5 +453,35 @@
   <footer>
     함께 배우고 성장하며, 더 나은 세상을 만드는 개발자 🌱
   </footer>
+
+  <script>
+    const reveals = document.querySelectorAll('.reveal');
+    const navLinks = document.querySelectorAll('.nav-link');
+    const sections = document.querySelectorAll('header[id], section[id]');
+
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        }
+      });
+    }, { threshold: 0.15 });
+
+    reveals.forEach((el) => revealObserver.observe(el));
+
+    const navObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          navLinks.forEach((link) => link.classList.remove('active'));
+          const activeLink = document.querySelector(`.nav-link[href="#${entry.target.id}"]`);
+          if (activeLink) activeLink.classList.add('active');
+        }
+      });
+    }, {
+      threshold: 0.45
+    });
+
+    sections.forEach((section) => navObserver.observe(section));
+  </script>
 </body>
 </html>
