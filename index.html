@@ -11,6 +11,29 @@
       background: #f7f9fc;
       color: #222;
       line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: white;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+      padding: 14px 20px;
+      text-align: center;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      margin: 0 16px;
+      font-size: 15px;
+    }
+
+    nav a:hover {
+      color: #6a8dff;
     }
 
     header {
@@ -83,14 +106,22 @@
   </style>
 </head>
 <body>
-  <header>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#specialization">Specialization</a>
+    <a href="#projects">Projects</a>
+    <a href="#techstack">Tech Stack</a>
+    <a href="#links">Links</a>
+  </nav>
+
+  <header id="home">
     <h1>Welcome to Sia's Portfolio 👋</h1>
     <p>AI Developer | Full-Stack Builder | Social Impact</p>
   </header>
 
   <div class="container">
-    <section>
-      <h2>About Me</h2>
+    <section id="specialization">
+      <h2>Specialization</h2>
       <div class="card">
         <p>컴퓨터공학 전공 기반의 AI 엔지니어입니다.</p>
         <p>React Native와 Spring Boot를 활용해 지속 가능한 IT 서비스를 개발하고 있습니다.</p>
@@ -98,7 +129,7 @@
       </div>
     </section>
 
-    <section>
+    <section id="projects">
       <h2>Projects</h2>
       <div class="card">
         <h3>세이브잇 SaveIt</h3>
@@ -113,7 +144,7 @@
       </div>
     </section>
 
-    <section>
+    <section id="techstack">
       <h2>Tech Stack</h2>
       <div class="stack">
         <span>C</span>
@@ -130,7 +161,7 @@
       </div>
     </section>
 
-    <section>
+    <section id="links">
       <h2>Links</h2>
       <div class="links">
         <a href="https://github.com/siaSim" target="_blank">GitHub</a>
