@@ -12,7 +12,7 @@
 
 정답이 정해지지 않은 AI 문제를 구조화하고,  
 LLM Agent·RAG를 서비스 흐름으로 구현합니다.  
-Structured Output, Reliability, Safety, Routing, Testing을 통해 AI 기능의 동작과 실패 경계를 검증합니다.
+Evaluation, Structured Output, Reliability, Safety, Routing, Testing을 통해 AI 기능의 동작과 실패 경계를 검증합니다.
 
 <br/>
 
@@ -37,7 +37,7 @@ Structured Output, Reliability, Safety, Routing, Testing을 통해 AI 기능의 
 
 - LLM Agent와 RAG를 Backend 서비스 흐름에 연결하고, 입력·검색·응답 경계를 구조화합니다.
 - Context Interpretation, Intent-based Routing, Structured Output을 검증 가능한 계약으로 다룹니다.
-- Reliability, Safety, PII 보호, fail-closed 정책, Testing을 중심으로 AI 기능의 동작과 위험을 관리합니다.
+- Evaluation, Reliability, Safety, PII 보호, fail-closed 정책, Testing을 중심으로 AI 기능의 동작과 위험을 관리합니다.
 
 ---
 
@@ -68,6 +68,7 @@ Structured Output, Reliability, Safety, Routing, Testing을 통해 AI 기능의 
 
 - text / voice / image 입력을 STT·OCR과 PII Protection을 거쳐 Structured LLM Analysis로 연결하고, Emotion Analysis·Tone Conversion 응답 계약을 확장했습니다.
 - Safety Policy·Content Safety를 적용하고, 일반 상담과 Legal RAG를 분리하는 RAG Chat Routing 및 법률 정보 범위를 구현했습니다.
+- Responsible AI Hard Set·General Stability Set을 대상으로 API 자동 평가 Harness를 구성·실행해 안정성·위험 탐지 결과를 개선 우선순위로 연결했습니다.
 
 **Tech Stack:** Python, FastAPI, Azure OpenAI, Azure AI Language, RAG, PostgreSQL
 
@@ -93,7 +94,7 @@ Structured Output, Reliability, Safety, Routing, Testing을 통해 AI 기능의 
 
 ## Experience
 
-- **2025.07–2026.06 | Flitto · AI Data Project Contributor**<br>
+- **2025.11–2026.06 | Flitto · AI Data Project Contributor**<br>
   LLM CODE 멀티턴 프롬프트 데이터셋 구축·품질 검수, AI Safety 학습 데이터 설계
 
 - **2025.07–2026.03 | 이찬진컴퓨터교실 · Programming & AI Instructor**  
