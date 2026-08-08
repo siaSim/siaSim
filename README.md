@@ -12,7 +12,7 @@
 
 정답이 정해지지 않은 AI 문제를 구조화하고,  
 LLM Agent·RAG를 서비스 흐름으로 구현합니다.  
-평가와 안전장치를 통해 AI 기능의 품질과 신뢰성을 검증합니다.
+Structured Output, Reliability, Safety, Routing, Testing을 통해 AI 기능의 동작과 실패 경계를 검증합니다.
 
 <br/>
 
@@ -36,24 +36,25 @@ LLM Agent·RAG를 서비스 흐름으로 구현합니다.
 ## About Me
 
 - LLM Agent와 RAG를 Backend 서비스 흐름에 연결하고, 입력·검색·응답 경계를 구조화합니다.
-- Context Interpretation, Intent-based Routing, Structured Output을 통해 AI 흐름을 검증 가능한 계약으로 다룹니다.
-- Evaluation, Safety, PII 보호, fail-closed 정책을 적용해 AI 기능의 품질과 위험을 관리합니다.
+- Context Interpretation, Intent-based Routing, Structured Output을 검증 가능한 계약으로 다룹니다.
+- Reliability, Safety, PII 보호, fail-closed 정책, Testing을 중심으로 AI 기능의 동작과 위험을 관리합니다.
 
 ---
 
 ## Featured Projects
 
+📖 상세 기술 근거는 [AI Engineering Case Studies](https://github.com/siaSim/ai-engineering-case-studies)에서 확인할 수 있습니다.
+
 ### ForeShield
 
-> 기후·재난 관련 자연어 질문을 구조화하고 Agent·RAG 기반 응답 흐름으로 연결하는 AI 서비스
+> 기후재난 질문을 구조화하고 Agent·RAG 기반 응답 흐름으로 연결하는 AI Backend 프로젝트
 
-**Role:** AI Engineer · LLM Agent / RAG / Backend
+**Role:** LLM Agent / RAG / Backend
 
-- 자연어 재난 질문을 구조화된 Context와 Agent 실행 흐름으로 연결
-- Agent와 RAG 결과를 Backend 응답 계약과 Structured Output으로 연결
-- Provenance, Safety, fail-closed 경계를 고려한 AI 서비스 흐름 구성
+- 자연어 요청을 Context Interpretation → AgentPlan → Intent-based Tool Router 흐름으로 연결하고, 모호한 입력의 잘못된 Tool 실행 가능성을 줄이는 계약을 구현했습니다.
+- Azure OpenAI·RAG 결과를 Structured Output, Orchestration, Provenance / Version propagation으로 연결하고 fail-closed·Prompt Injection 방어·Token diagnostics·Testing을 적용했습니다.
 
-**Tech Stack:** Python, FastAPI, Azure OpenAI, Azure AI Search, Pydantic, GitHub Actions, Azure
+**Tech Stack:** Python, FastAPI, Azure OpenAI, Azure AI Search, Pydantic, GitHub Actions, Microsoft Azure
 
 [📖 ForeShield Case Study](https://github.com/siaSim/ai-engineering-case-studies/blob/main/projects/foreshield.md)
 
@@ -61,13 +62,12 @@ LLM Agent·RAG를 서비스 흐름으로 구현합니다.
 
 ### PPYURIND
 
-> 부부·연인의 감정 기록과 관계 회복을 돕는 멀티모달 AI 서비스
+> 감정·갈등 기록을 분석하고 일반 상담·법률 정보·안전 안내를 구분하는 AI 서비스
 
-**Role:** Backend & AI Integration · Microsoft AI School 10기 2차 프로젝트
+**Role:** AI Backend / LLM Application
 
-- 멀티모달 입력과 Structured LLM 분석 흐름을 Backend에 연결
-- PII 보호와 AI Safety 정책을 고려한 분석·응답 경계 구성
-- 일반 상담·법률 정보·안전 안내를 구분하는 RAG Routing 흐름 구현
+- text / voice / image 입력을 STT·OCR과 PII Protection을 거쳐 Structured LLM Analysis로 연결하고, Emotion Analysis·Tone Conversion 응답 계약을 확장했습니다.
+- Safety Policy·Content Safety를 적용하고, 일반 상담과 Legal RAG를 분리하는 RAG Chat Routing 및 법률 정보 범위를 구현했습니다.
 
 **Tech Stack:** Python, FastAPI, Azure OpenAI, Azure AI Language, RAG, PostgreSQL
 
@@ -77,56 +77,23 @@ LLM Agent·RAG를 서비스 흐름으로 구현합니다.
 
 ### CellGuard AI
 
-> 배터리 검사 결과를 서비스 화면과 Inspection Report 흐름으로 연결한 AI 프로젝트
+> Computer Vision 검사 결과를 서비스 화면·저장·리포트 흐름으로 연결한 AI Service Integration 프로젝트
 
-**Role:** AI Integration · Inspection Report / Deployment Workflow
+**Role:** Team Lead · AI Service Integration / Computer Vision Application
 
-- Azure Custom Vision integration
-- CT 검사 결과 Service Integration
-- Inspection Report / Storage 및 Azure App Service·GitHub Actions workflow
+- Azure Custom Vision과 CT / DeepLab inference 결과를 검사 애플리케이션에 통합했습니다.
+- 검사 결과 저장·이력 필터·상세 리포트 흐름을 연결했습니다.
+- GitHub Actions와 Azure App Service 기반 Streamlit 프로토타입 배포·시연 흐름을 구성했습니다.
 
-**Tech Stack:** Azure Custom Vision, Azure App Service, GitHub Actions
+**Tech Stack:** Azure Custom Vision, DeepLab, PyTorch, Streamlit, GitHub Actions, Microsoft Azure
 
-[📦 Public Repository](https://github.com/ms-ai-school-10th-team3/battery)
-
----
-
-## Deep Dive
-
-📚 **Deep Dive: [AI Engineering Case Studies](https://github.com/siaSim/ai-engineering-case-studies)**
-
-PR·Issue·Commit·테스트 등 검증 가능한 근거를 바탕으로 개인 기여와 기술적 의사결정을 정리한 Case Study입니다.
-
----
-
-## Other Projects
-
-### SaveIt
-
-> 음식물쓰레기 절감을 위한 마감할인 서비스
-
-- 모바일 제품 흐름과 Backend 기능 통합 경험
-- React Native, Spring Boot, Python 기반 기능 연결
-
-[📦 Repository](https://github.com/sihyunhada-suwon/ddaengchuri)
-
----
-
-## Engineering Focus
-
-- Agent Orchestration
-- RAG
-- Context Interpretation / Routing
-- Structured Output
-- Evaluation
-- Safety / PII
-- Backend Reliability
+[📖 CellGuard AI Case Study](https://github.com/siaSim/ai-engineering-case-studies/blob/main/projects/cellguard-ai.md)
 
 ---
 
 ## Experience
 
-- **2025.11–2026.06 | Flitto · AI Data Project Contributor**  
+- **2025.07–2026.06 | Flitto · AI Data Project Contributor**<br>
   LLM CODE 멀티턴 프롬프트 데이터셋 구축·품질 검수, AI Safety 학습 데이터 설계
 
 - **2025.07–2026.03 | 이찬진컴퓨터교실 · Programming & AI Instructor**  
@@ -143,6 +110,7 @@ PR·Issue·Commit·테스트 등 검증 가능한 근거를 바탕으로 개인 
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
 ![Azure OpenAI](https://img.shields.io/badge/Azure_OpenAI-0078D4?style=flat-square&logo=microsoftazure&logoColor=white)
 ![Azure AI Search](https://img.shields.io/badge/Azure_AI_Search-0078D4?style=flat-square&logo=microsoftazure&logoColor=white)
+![RAG](https://img.shields.io/badge/RAG-7B61FF?style=flat-square)
 ![Pydantic](https://img.shields.io/badge/Pydantic-E92063?style=flat-square)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
@@ -153,13 +121,8 @@ PR·Issue·Commit·테스트 등 검증 가능한 근거를 바탕으로 개인 
 ## Supporting Tech
 
 ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white)
 ![Azure Custom Vision](https://img.shields.io/badge/Azure_Custom_Vision-0078D4?style=flat-square&logo=microsoftazure&logoColor=white)
 ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white)
-![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
-![React Native](https://img.shields.io/badge/React_Native-20232A?style=flat-square&logo=react&logoColor=61DAFB)
-![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/SQLAlchemy_/_pgvector-4169E1?style=flat-square)
 
 ---
 
@@ -184,7 +147,6 @@ PR·Issue·Commit·테스트 등 검증 가능한 근거를 바탕으로 개인 
 <div align="center">
 
 [![GitHub](https://img.shields.io/badge/GitHub-siaSim-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/siaSim)
-[![AI Engineering Case Studies](https://img.shields.io/badge/AI_Engineering_Case_Studies-5A29E4?style=flat-square&logo=github&logoColor=white)](https://github.com/siaSim/ai-engineering-case-studies)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-siasim-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/siasim/)
 [![Tech Blog](https://img.shields.io/badge/Tech_Blog-Naver-03C75A?style=flat-square&logo=naver&logoColor=white)](https://blog.naver.com/shalisa)
 [Email](mailto:shalisa@naver.com)
