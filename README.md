@@ -88,7 +88,7 @@ Evaluation, Structured Output, Reliability, Safety, Routing, Testing을 통해 A
 
 **Tech Stack:** Azure Custom Vision, DeepLab, PyTorch, Streamlit, GitHub Actions, Microsoft Azure
 
-[📖 CellGuard AI Case Study](https://github.com/siaSim/ai-engineering-case-studies/blob/main/projects/cellguard-ai.md)
+[📦 Public Repository](https://github.com/ms-ai-school-10th-team3/battery) · [📖 CellGuard AI Case Study](https://github.com/siaSim/ai-engineering-case-studies/blob/main/projects/cellguard-ai.md)
 
 ---
 
