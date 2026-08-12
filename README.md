@@ -97,7 +97,7 @@ Evaluation, Structured Output, Reliability, Safety, Routing, Testing을 통해 A
 - **2025.11–2026.06 | Flitto · AI Data Project Contributor**<br>
   LLM CODE 멀티턴 프롬프트 데이터셋 구축·품질 검수, AI Safety 학습 데이터 설계
 
-- **2025.07–2026.03 | 이찬진컴퓨터교실 · Programming & AI Instructor**  
+- **2025.07–2026.03 | 이찬진컴퓨터교실 강남교육본부 · Programming / AI Instructor**  
   Python·Scratch·AI 교육, 수준별 수업 구성
 
 - **2022.04–2024.02 | 대전세종충남 지역혁신플랫폼 · Undergraduate Researcher**  
@@ -139,7 +139,7 @@ Evaluation, Structured Output, Reliability, Safety, Routing, Testing을 통해 A
 
 - **Microsoft AI School 10기** — AI Engineering · 2026.03–2026.09
 - **수원대학교** — 컴퓨터SW전공 · 2024.03–2026.02
-- **배재대학교** — 컴퓨터공학과 · 2022.03–2024.02
+- **배재대학교** — 컴퓨터공학과 수료 · 2022.03–2024.02
 
 ---
 
