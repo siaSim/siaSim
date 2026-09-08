@@ -129,6 +129,7 @@ Evaluation, Structured Output, Reliability, Safety, Routing, Testing을 통해 A
 
 ## Awards
 
+- **Microsoft AI School 10기 파이널 프로젝트 1위** — FORESHIELD, 2026
 - **Microsoft AI School 10기 2차 프로젝트 1위** — PPYURIND, 2026
 - **한이음 드림업 공모전 장려상** — SaveIt, 2025
 - **배재대학교 멘토링 우수상** — 멘토링 팀장, 2023
