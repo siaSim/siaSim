@@ -11,7 +11,7 @@
 ### AI Engineer | LLM Agent · RAG · Backend
 
 정답이 정해지지 않은 AI 문제를 구조화하고,  
-LLM Agent·RAG를 서비스 흐름으로 구현합니다.  
+LLM Agent·RAG를 서비스 흐름으로 구현합니다.
 Evaluation, Structured Output, Reliability, Safety, Routing, Testing을 통해 AI 기능의 동작과 실패 경계를 검증합니다.
 
 <br/>
