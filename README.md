@@ -8,7 +8,7 @@
 
 # 👩🏻‍💻 Sia Sim
 
-### AI Engineer | LLM Agent · RAG · Backend
+### AI Engineer | LLM Agent , RAG , Backend
 
 정답이 정해지지 않은 AI 문제를 구조화하고,  
 LLM Agent·RAG를 서비스 흐름으로 구현합니다.
